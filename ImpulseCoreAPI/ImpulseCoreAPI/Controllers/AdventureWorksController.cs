@@ -23,13 +23,11 @@ namespace ImpulseCoreAPI.Controllers
         public IActionResult GetDimAccount()
         {
             List<DimAccountModal> DimAccountList = new List<DimAccountModal>();
-            //DimAccountList = _AdventureWorks.GetDimAccount();
-
-            //if (DimAccountList.Count > 0)
-            //    return Json(DimAccountList);
-            //else
-            //    return Ok("Something Went Wrong!!!!");
-            return Json(DimAccountList);
+            DimAccountList = _AdventureWorks.GetDimAccount();
+            if (DimAccountList.Count > 0)
+                return Json(DimAccountList);
+            else
+                return Ok("Something Went Wrong!!!!");
         }
     }
 }
