@@ -24,6 +24,7 @@ namespace ImpulseCoreAPI.Controllers
         {
             List<DimAccountModal> DimAccountList = new List<DimAccountModal>();
             DimAccountList = _AdventureWorks.GetDimAccount();
+
             if (DimAccountList.Count > 0)
                 return Json(DimAccountList);
             else
