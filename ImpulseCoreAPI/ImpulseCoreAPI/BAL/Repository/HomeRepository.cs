@@ -96,20 +96,12 @@ namespace ImpulseCoreAPI.BAL.Repository
                     }
                 }
 
-                    
-
-            
-
-
-
-
-                }
-                catch (Exception ex)
-                {
+            }
+            catch (Exception ex)
+            {
                     throw ex;
-                }
+            }
             return ResponseObj;
-
         }
 
 

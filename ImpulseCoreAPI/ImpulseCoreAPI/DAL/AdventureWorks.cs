@@ -117,7 +117,17 @@ namespace ImpulseCoreAPI.DAL
         public string CustomMemberOptions { get; set; }
 
     }
+    #endregion
 
+    #region FilePathString
+    [Table("FilePathString")]
+    public class FilePathString
+    {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Key, Column(Order = 1)]
+        public int Id { get; set; }
+       public string FilePath { get; set; }
+    }
     #endregion
 
 
