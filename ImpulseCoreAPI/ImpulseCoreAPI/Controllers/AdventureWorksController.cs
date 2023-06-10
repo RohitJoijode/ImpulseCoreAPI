@@ -100,5 +100,26 @@ namespace ImpulseCoreAPI.Controllers
             return ResponseObj;
         }
 
+        [HttpGet,Route("DownloadFile")]
+        public async Task<IActionResult> DownloadFile()
+        {
+            try
+            {
+                var path = Path.Combine("D:\\","UploadDownloadFile");
+                var memory = new MemoryStream();
+                using (var stream = new FileStream(path,FileMode.Open))
+                {
+                    await stream.CopyToAsync(memory);
+                }
+                memory.Position = 0;
+                var contentType = "Application/octet-stream";
+                var fileName = Path.GetFileName(path);
+                return File(memory,contentType,fileName);
+            } catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }
