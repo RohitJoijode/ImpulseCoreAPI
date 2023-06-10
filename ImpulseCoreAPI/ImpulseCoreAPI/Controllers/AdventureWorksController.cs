@@ -105,6 +105,9 @@ namespace ImpulseCoreAPI.Controllers
         {
             try
             {
+               ////// 
+                 ////// Changes from Remote
+                 /////
                 var path = Path.Combine("D:\\","UploadDownloadFile");
                 var memory = new MemoryStream();
                 using (var stream = new FileStream(path,FileMode.Open))
