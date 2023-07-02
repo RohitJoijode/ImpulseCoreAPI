@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git Project\\Impulse Core\\04-06-2023\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj": {}
+    "C:\\Users\\amarj\\OneDrive\\Desktop\\Git Project\\ImpulseCore\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj": {}
   },
   "projects": {
-    "D:\\Git Project\\Impulse Core\\04-06-2023\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj": {
+    "C:\\Users\\amarj\\OneDrive\\Desktop\\Git Project\\ImpulseCore\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git Project\\Impulse Core\\04-06-2023\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
+        "projectUniqueName": "C:\\Users\\amarj\\OneDrive\\Desktop\\Git Project\\ImpulseCore\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
         "projectName": "ImpulseCoreAPI",
-        "projectPath": "D:\\Git Project\\Impulse Core\\04-06-2023\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
+        "projectPath": "C:\\Users\\amarj\\OneDrive\\Desktop\\Git Project\\ImpulseCore\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
         "packagesPath": "C:\\Users\\amarj\\.nuget\\packages\\",
-        "outputPath": "D:\\Git Project\\Impulse Core\\04-06-2023\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\obj\\",
+        "outputPath": "C:\\Users\\amarj\\OneDrive\\Desktop\\Git Project\\ImpulseCore\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amarj\\AppData\\Roaming\\NuGet\\NuGet.Config",
