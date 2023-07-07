@@ -42,6 +42,7 @@ namespace ImpulseCoreAPI
 
             services.AddScoped<ImpulseCoreAPI.BAL.IRepository.IHome,ImpulseCoreAPI.BAL.Repository.HomeRepository>();
             services.AddScoped<ImpulseCoreAPI.BAL.IRepository.IAdventureWorks,ImpulseCoreAPI.BAL.Repository.AdventureWorksRepo>();
+            services.AddScoped<ImpulseCoreAPI.BAL.IRepository.IRsaHelperRepo,ImpulseCoreAPI.BAL.Repository.RSAHelperRepo>();
             //services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             //services.AddSwaggerGen();
             //MVC

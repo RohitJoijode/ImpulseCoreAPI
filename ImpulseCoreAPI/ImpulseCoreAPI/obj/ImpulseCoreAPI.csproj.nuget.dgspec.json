@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amarj\\OneDrive\\Desktop\\Git Project\\ImpulseCore\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj": {}
+    "C:\\Users\\amarj\\OneDrive\\Desktop\\Changes Code Impulse Core API\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amarj\\OneDrive\\Desktop\\Git Project\\ImpulseCore\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj": {
+    "C:\\Users\\amarj\\OneDrive\\Desktop\\Changes Code Impulse Core API\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amarj\\OneDrive\\Desktop\\Git Project\\ImpulseCore\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
+        "projectUniqueName": "C:\\Users\\amarj\\OneDrive\\Desktop\\Changes Code Impulse Core API\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
         "projectName": "ImpulseCoreAPI",
-        "projectPath": "C:\\Users\\amarj\\OneDrive\\Desktop\\Git Project\\ImpulseCore\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
+        "projectPath": "C:\\Users\\amarj\\OneDrive\\Desktop\\Changes Code Impulse Core API\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
         "packagesPath": "C:\\Users\\amarj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amarj\\OneDrive\\Desktop\\Git Project\\ImpulseCore\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\obj\\",
+        "outputPath": "C:\\Users\\amarj\\OneDrive\\Desktop\\Changes Code Impulse Core API\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amarj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -77,6 +77,10 @@
             "Microsoft.OpenApi": {
               "target": "Package",
               "version": "[1.6.3, )"
+            },
+            "Portable.BouncyCastle": {
+              "target": "Package",
+              "version": "[1.9.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
