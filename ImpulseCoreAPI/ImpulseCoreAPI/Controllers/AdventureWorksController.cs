@@ -9,6 +9,7 @@ using ImpulseCoreAPI.Bridge;
 using Microsoft.AspNetCore.Http;
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
+using System.Text.Json;
 
 namespace ImpulseCoreAPI.Controllers
 {
@@ -30,12 +31,38 @@ namespace ImpulseCoreAPI.Controllers
         [HttpGet,Route("GetDimAccount")]
         public IActionResult GetDimAccount()
         {
+            dynamic RequestObject = null, ResponseObject = null,ReturnData = null;
+            ImpulseCoreLogModal ImpulseCoreLogModalObj = new ImpulseCoreLogModal();
             List<DimAccountModal> DimAccountList = new List<DimAccountModal>();
-            DimAccountList = _AdventureWorks.GetDimAccount();
-            if (DimAccountList.Count > 0)
-                return Json(DimAccountList);
-            else
-                return Ok("Something Went Wrong!!!!");
+            try
+            {
+                DimAccountList = _AdventureWorks.GetDimAccount();
+                if (DimAccountList.Count > 0)
+                {
+                    ReturnData = DimAccountList;
+                }
+                else
+                {
+                    ReturnData = JsonSerializer.Serialize("Data not Found !!!!");
+                }
+                    
+            } catch(Exception ex)
+            {
+                ReturnData = JsonSerializer.Serialize("Something went Wrong !!!");
+                ImpulseCoreLogModalObj.IsError = true;
+                ImpulseCoreLogModalObj.ErrorMessage = ex.Message;
+            } 
+                ResponseObject = JsonSerializer.Serialize(DimAccountList);
+                var CommonController = new CommonController();
+                ImpulseCoreLogModalObj.ActionMethodName = "GetDimAccount";
+                ImpulseCoreLogModalObj.APIControllerName = "AdventureWorks";
+                ImpulseCoreLogModalObj.VendorName = "Admin";
+                ImpulseCoreLogModalObj.VendorApiKey = "Key@123";
+                ImpulseCoreLogModalObj.Data = ResponseObject;
+                ImpulseCoreLogModalObj.RequestParamterData = RequestObject;
+                ImpulseCoreLogModalObj.CreatedBy = "Admin";
+                CommonController.ImpulseCoreAPITransactionLog(ImpulseCoreLogModalObj);
+                return Ok(ReturnData);
         }
 
         [HttpPost,Route("UploadFilesUsingAngular")]
