@@ -86,7 +86,7 @@ namespace ImpulseCoreAPI.Controllers
                     comm.CommandTimeout = 0;
                     comm.Parameters.AddWithValue("@APIControllerName",String.IsNullOrEmpty(ImpulseCoreLogModalObj.APIControllerName) ? (object)DBNull.Value : ImpulseCoreLogModalObj.APIControllerName);
                     comm.Parameters.AddWithValue("@ActionMethodName",String.IsNullOrEmpty(ImpulseCoreLogModalObj.ActionMethodName) ? (object)DBNull.Value : ImpulseCoreLogModalObj.ActionMethodName);
-                    comm.Parameters.AddWithValue("@IP",String.IsNullOrEmpty(GetRemoteIP()) ? (object)DBNull.Value : GetRemoteIP());
+                    comm.Parameters.AddWithValue("@IP",String.IsNullOrEmpty(GetIP()) ? (object)DBNull.Value : GetIP());
                     comm.Parameters.AddWithValue("@RequestParamterData",String.IsNullOrEmpty(ImpulseCoreLogModalObj.RequestParamterData) ? (object)DBNull.Value : ImpulseCoreLogModalObj.RequestParamterData);
                     comm.Parameters.AddWithValue("@VendorName", String.IsNullOrEmpty(ImpulseCoreLogModalObj.VendorName) ? (object)DBNull.Value : ImpulseCoreLogModalObj.VendorName);
                     comm.Parameters.AddWithValue("@VendorApiKey", String.IsNullOrEmpty(ImpulseCoreLogModalObj.VendorApiKey) ? (object)DBNull.Value : ImpulseCoreLogModalObj.VendorApiKey);

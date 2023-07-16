@@ -10,4 +10,23 @@ namespace ImpulseCoreAPI.Bridge
         public bool IsSuccess { get; set; }
         public string Message { get; set; }
     }
+
+    public class ResponseData<T>
+    {
+        public bool IsSuccess { get; set; }
+        public string Message { get; set; }
+        public ResponseData<T> Data {get;set;}
+    }
+
+    public class UserLogInResponse
+    {
+        public bool IsSuccess { get; set; }
+        public string Message { get; set; }
+        public string UserEmailId { get; set; }
+        public string UserMobileNo { get; set; }
+        public string UserId { get; set; }
+
+    }
+
+
 }
