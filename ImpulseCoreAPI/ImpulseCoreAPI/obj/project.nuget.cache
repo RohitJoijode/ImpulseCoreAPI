@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jctu3S0dH3X9QhBNN/TWPYmNC5PFMFnkrLxzwash3n+QMbTf0p9tHoFbpvEcOxQEGFcrG5L1rmvIAv/UpXS2iw==",
+  "dgSpecHash": "ZscMRqdvt4QYeVVEtp9HAeg3o/pnOuRCnpjoCS0qNHn94lGcofDGdI1lW/bUfgwUbxfwItNW5d57/HAUrihgfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amarj\\OneDrive\\Desktop\\Changes Code Impulse Core API\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
+  "projectFilePath": "C:\\Users\\amarj\\OneDrive\\Desktop\\IMPULSE\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amarj\\.nuget\\packages\\arutmlth\\1.0.2\\arutmlth.1.0.2.nupkg.sha512",
     "C:\\Users\\amarj\\.nuget\\packages\\fluentassertions\\6.10.0\\fluentassertions.6.10.0.nupkg.sha512",

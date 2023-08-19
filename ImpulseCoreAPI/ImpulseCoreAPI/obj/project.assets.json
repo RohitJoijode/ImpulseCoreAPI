@@ -8461,11 +8461,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amarj\\OneDrive\\Desktop\\Changes Code Impulse Core API\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
+      "projectUniqueName": "C:\\Users\\amarj\\OneDrive\\Desktop\\IMPULSE\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
       "projectName": "ImpulseCoreAPI",
-      "projectPath": "C:\\Users\\amarj\\OneDrive\\Desktop\\Changes Code Impulse Core API\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
+      "projectPath": "C:\\Users\\amarj\\OneDrive\\Desktop\\IMPULSE\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI.csproj",
       "packagesPath": "C:\\Users\\amarj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amarj\\OneDrive\\Desktop\\Changes Code Impulse Core API\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\obj\\",
+      "outputPath": "C:\\Users\\amarj\\OneDrive\\Desktop\\IMPULSE\\ImpulseCoreAPI\\ImpulseCoreAPI\\ImpulseCoreAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amarj\\AppData\\Roaming\\NuGet\\NuGet.Config",
