@@ -546,3 +546,7 @@ C:\Users\amarj\OneDrive\Desktop\IMPULSE\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCor
 C:\Users\amarj\OneDrive\Desktop\IMPULSE\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\obj\Debug\netcoreapp3.1\ImpulseCoreAPI.dll
 C:\Users\amarj\OneDrive\Desktop\IMPULSE\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\obj\Debug\netcoreapp3.1\ImpulseCoreAPI.pdb
 C:\Users\amarj\OneDrive\Desktop\IMPULSE\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\obj\Debug\netcoreapp3.1\ImpulseCoreAPI.genruntimeconfig.cache
+C:\Users\amarj\OneDrive\Desktop\IMPULSE\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\amarj\OneDrive\Desktop\IMPULSE\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\amarj\OneDrive\Desktop\IMPULSE\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\amarj\OneDrive\Desktop\IMPULSE\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

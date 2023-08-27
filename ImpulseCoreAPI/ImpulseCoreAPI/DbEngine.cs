@@ -16,7 +16,7 @@ namespace ImpulseCoreAPI
         public DbSet<MemberDb> MemberDb { get; set; }
         public DbSet<DimAccount> DimAccount { get; set; }
 
+        public DbSet<Tbl_USERS> Users { get; set; }
         public DbSet<FilePathString> FilePathString { get; set; }
-
     }
 }
