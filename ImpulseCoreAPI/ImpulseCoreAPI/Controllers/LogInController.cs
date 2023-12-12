@@ -27,14 +27,12 @@ namespace ImpulseCoreAPI.Controllers
         private readonly IRsaHelperRepo _RsaHelperRepo;
         private readonly DbEngine _DbEngine;
         private readonly IConfiguration config;
-        
         public LogInController(IRsaHelperRepo RsaHelperRepo,DbEngine DbEngine,IConfiguration _config) 
         {   
             _RsaHelperRepo = RsaHelperRepo;
             _DbEngine = DbEngine;
             config = _config;
         }
-
         [HttpPost,Route("UserLogIn")]
         public IActionResult UserLogIn(UserLogInRequest UserLogInRequestObj)
         {
