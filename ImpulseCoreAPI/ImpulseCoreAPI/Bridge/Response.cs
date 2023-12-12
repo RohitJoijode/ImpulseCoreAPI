@@ -15,6 +15,7 @@ namespace ImpulseCoreAPI.Bridge
     {
         public bool IsSuccess { get; set; }
         public string Message { get; set; }
+        public string Token { get; set; }
         public ResponseData<T> Data {get;set;}
     }
 

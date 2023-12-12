@@ -37,22 +37,29 @@ namespace ImpulseCoreAPI.BAL.Repository
             new Member{MemberId=5, FirstName="Swati", LastName="Shah", Address="Vadodara" },
             new Member{MemberId=6, FirstName="Rashmi", LastName="Shah", Address="Vadodara" },
         };
-        public List<Member> GetAllMember()
+        public List<getMenu> GetAllMember()
         {
-            List<Member> MembersList = new List<Member>();
-            MembersList = _DbEngine.SqlQuery<Member>("GetMemberDb").ToList();
+            List<getMenu> MembersList = new List<getMenu>();
+            MembersList = _DbEngine.SqlQuery<getMenu>("SP_Menu").ToList();
             return MembersList;
         }
 
-        public Member GetMember(int id)
+        public List<Employee> SP_DemoMultipleTableExcution()
+        {
+            List<Employee> MembersList = new List<Employee>();
+            MembersList = _DbEngine.SqlQuery<Employee>("SP_DemoMultipleTableExcution").ToList();
+            return MembersList;
+        }
+
+        public List<getMenu> GetMember(int id)
         {
             try
             {
-                Member Member = new Member();
+                List<getMenu> Member = new List<getMenu>();
                 SqlParameter[] parameters =   {
                                                 new SqlParameter("@Id",id),
                                             };
-                Member = _DbEngine.SqlQuery<Member>("GetMemberDbWithParameter @Id", parameters).FirstOrDefault();
+                Member = _DbEngine.SqlQuery<getMenu>("SP_Menu @Id", parameters).ToList();
                 return Member;
             }
             catch(Exception ex)

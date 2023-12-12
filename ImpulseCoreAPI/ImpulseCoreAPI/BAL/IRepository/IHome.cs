@@ -8,8 +8,9 @@ namespace ImpulseCoreAPI.BAL.IRepository
 {
     public interface IHome  
     {
-        List<Member> GetAllMember();
-        Member GetMember(int id);
+        List<getMenu> GetAllMember();
+        List<getMenu> GetMember(int id);
         Response SaveMembersDetails(Member MemberObj);
+        List<Employee> SP_DemoMultipleTableExcution();
     }
 }

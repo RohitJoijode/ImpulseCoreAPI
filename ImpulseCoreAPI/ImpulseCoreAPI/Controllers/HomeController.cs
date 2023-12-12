@@ -15,5 +15,6 @@ namespace ImpulseCoreAPI.Controllers
         {
             return Ok("Something Went Wrong!!!!");
         }
+
     }
 }

@@ -32,7 +32,7 @@ namespace ImpulseCoreAPI.Controllers
         {
             try
             {
-                List<Member> MemberList = new List<Member>();
+                List<getMenu> MemberList = new List<getMenu>();
                 MemberList = _Home.GetAllMember();
                 if (MemberList.Count > 0)
                     return Ok(MemberList);
@@ -42,7 +42,6 @@ namespace ImpulseCoreAPI.Controllers
             {
                 throw ex;
             }
-            
         }
 
         [HttpGet,Route("GetMember")]
@@ -50,7 +49,7 @@ namespace ImpulseCoreAPI.Controllers
         {
             try
             {
-                Member MemberList = new Member();
+                List<getMenu> MemberList = new List<getMenu>();
                 MemberList = _Home.GetMember(Id);
                 if (MemberList != null)
                     return Ok(MemberList);
@@ -70,6 +69,25 @@ namespace ImpulseCoreAPI.Controllers
             {
                 Response ResponseObj = new Response();
                 ResponseObj = _Home.SaveMembersDetails(MemberObj);
+                if (ResponseObj != null)
+                    return Ok(ResponseObj);
+                else
+                    return Ok("Something Went Wrong!!!!");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        [HttpPost,Route("SP_DemoMultipleTableExcution")]
+        public IActionResult SP_DemoMultipleTableExcution()
+        {
+            try
+            {
+                List<Employee> ResponseObj = new List<Employee>();
+                ResponseObj = _Home.SP_DemoMultipleTableExcution();
                 if (ResponseObj != null)
                     return Ok(ResponseObj);
                 else

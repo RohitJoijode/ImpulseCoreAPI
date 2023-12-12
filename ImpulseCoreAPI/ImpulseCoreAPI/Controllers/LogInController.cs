@@ -12,6 +12,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using ImpulseCoreAPI.Enums;
 
 namespace ImpulseCoreAPI.Controllers
 {
@@ -28,7 +29,7 @@ namespace ImpulseCoreAPI.Controllers
         private readonly IConfiguration config;
         
         public LogInController(IRsaHelperRepo RsaHelperRepo,DbEngine DbEngine,IConfiguration _config) 
-        {
+        {   
             _RsaHelperRepo = RsaHelperRepo;
             _DbEngine = DbEngine;
             config = _config;
@@ -43,17 +44,22 @@ namespace ImpulseCoreAPI.Controllers
                 string Data = "";
                 UserLogInRequestObj.UserName = _RsaHelperRepo.Decrypt(UserLogInRequestObj.UserName);
                 UserLogInRequestObj.Password = _RsaHelperRepo.Decrypt(UserLogInRequestObj.Password);
+                var UserLogInObject = _DbEngine.Users.Where(x => x.EmailId == UserLogInRequestObj.UserName 
+                                                                    && x.Password == UserLogInRequestObj.Password 
+                                                                    && x.IsActive == true
+                                                                ).FirstOrDefault();
 
-                var UserLogInObject = _DbEngine.Users.Where(x => x.EmailId == UserLogInRequestObj.UserName && x.Password == UserLogInRequestObj.Password && x.IsActive == true).FirstOrDefault();
-
-                if(UserLogInObject == null)
+                if(UserLogInObject != null)
                 {
-                    //string Id,string firstName,string lastName,string email,string mobile,string gender
-
                       string key =  config.GetSection("JWTConfig").GetSection("key").Value;
                       string TokenDuration = config.GetSection("JWTConfig").GetSection("Duration").Value;
-                      ResponseDataObj.Message = GenerateToken("09", "rohit", "joijode", "rohitjoijode122@gmail.com", "8108781487", "male",key,TokenDuration);
+                      ResponseDataObj.Token = GenerateToken(UserLogInObject.Id.ToString(),UserLogInObject.Name.ToString(),UserLogInObject.EmailId.ToString(),UserLogInObject.MobileNo.ToString(),UserLogInObject.TYPE.ToString(),key,TokenDuration);
+                      ResponseDataObj.Message = "LogIn Successfully !!!";
                       ResponseDataObj.IsSuccess = true;
+                } else
+                {
+                    ResponseDataObj.Message = "Your UserName and Password Invalid !!!";
+                    ResponseDataObj.IsSuccess = false;
                 }
                 return Ok(ResponseDataObj);
             }
@@ -63,20 +69,18 @@ namespace ImpulseCoreAPI.Controllers
             }
             return BadRequest("Failure !!!");
         }
-
-        public static string GenerateToken(string Id, string firstName, string lastName, string email, string mobile, string gender,string keyd,string TokenDuration)
+        public static string GenerateToken(string Id,string name,string email,string mobile,string role,string keyd,string TokenDuration)
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(keyd));
             var Signature = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var payload = new[]
             {
-                new Claim("id",Id),
-                new Claim("firstName",firstName),
-                new Claim("lastName",lastName),
-                new Claim("email",email),
+                new Claim("Userid",Id),
+                new Claim("CompanyName",name),
+                new Claim("CompanyEmail",email),
                 new Claim("mobile",mobile),
-                new Claim("gender",gender)
+                new Claim("role",role)
             };
 
             var jwttoken = new JwtSecurityToken(
