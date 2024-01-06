@@ -10,5 +10,9 @@ namespace ImpulseCoreAPI.BAL.IRepository
     {
         List<getMenu> GetMenuByUserId(UserLogInRequest UserLogInRequest);
         List<GetSubMenu> GetSubMenuByUserIdAndMenuId(UserLogInRequest UserLogInRequest);
+        List<GetUsers> GetUsersList(UserLogInRequest UserLogInRequest);
+        GetUsers GetUserEditData(UserRequest UserRequest);
+        List<GetUsers> getdemoUserList(UserRequest UserRequest);
+        List<dbresponse> SaveupdateUserList(UserRequest UserRequest);
     }
 }

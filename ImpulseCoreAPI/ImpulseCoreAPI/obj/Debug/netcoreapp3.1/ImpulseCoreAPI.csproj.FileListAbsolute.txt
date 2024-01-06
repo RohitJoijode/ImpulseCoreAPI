@@ -618,7 +618,6 @@ D:\Git Application\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\b
 D:\Git Application\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Git Application\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Git Application\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Git Application\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\obj\Debug\netcoreapp3.1\ImpulseCoreAPI.csproj.AssemblyReference.cache
 D:\Git Application\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\obj\Debug\netcoreapp3.1\ImpulseCoreAPI.GeneratedMSBuildEditorConfig.editorconfig
 D:\Git Application\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\obj\Debug\netcoreapp3.1\ImpulseCoreAPI.AssemblyInfoInputs.cache
 D:\Git Application\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\ImpulseCoreAPI\obj\Debug\netcoreapp3.1\ImpulseCoreAPI.AssemblyInfo.cs

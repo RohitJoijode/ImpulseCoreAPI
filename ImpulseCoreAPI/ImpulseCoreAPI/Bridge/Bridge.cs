@@ -66,4 +66,34 @@ namespace ImpulseCoreAPI.Bridge
         public DateTime? updatedon { get; set; }
     }
     #endregion
+
+
+    #region GetUsers
+    public class GetUsers
+    {
+        
+        public long? row_num { get; set; }
+        public long? Id { get; set; }
+        public string Name { get; set; }
+        public string Address1 { get; set; }
+        public string Address2 { get; set; }
+        public string Address3 { get; set; }
+        public string EmailId { get; set; }
+        public string Password { get; set; }
+        public string MobileNo { get; set; }
+        public string PAN { get; set; }
+        public long? TYPE { get; set; }
+        public bool? IsActive { get; set; }
+        public long? CreatedBy { get; set; }
+        public DateTime? CreatedOn { get; set; }
+        public long? UpdatedBy { get; set; }
+        public DateTime? UpdatedOn { get; set; }
+    }
+    #endregion
+
+    public class dbresponse
+    {
+        public bool status { get; set; }
+        public string message  { get; set; }
+    }
 }
